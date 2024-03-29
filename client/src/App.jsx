@@ -1,6 +1,9 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
+import ProductInfo from "./components/ProductInfo";
+import MotorStats from "./components/MotorStats";
+import Accessories from "./components/Accessories";
 
 export default function App() {
   return (
@@ -8,6 +11,9 @@ export default function App() {
         <Navbar />
         <Hero />
         <Stats />
+        <ProductInfo />
+        <MotorStats />
+        <Accessories />
       </main>   
   )
 }

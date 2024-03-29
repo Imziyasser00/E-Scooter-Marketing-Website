@@ -5,53 +5,53 @@ import React from 'react'
 
 const Stats = () => {
 
+    const statsData = [{
+        value : "105",
+        unit : "lbs",
+        label : "Net Weight"
+    },
+    {
+        value : "26",
+        unit : "mph",
+        label : "Top Speed"
+    },
+    {
+        value : "38",
+        unit : "miles",
+        label : "Max Range"
+    },
+    {
+        value : "89",
+        unit : "nm",
+        label : "Max Torques"
+    },
+    {
+        value : "22%",
+        unit : "slope",
+        label : "Hill Climbing"
+    },
+    {
+        value : "2X",
+        unit : "",
+        label : "Hydralic Disc"
+    }
+]
+
   return (
-    <div className='flex w-full gap-14 items-center justify-center mt-24'>
-        <div className='flex flex-col justify-center rounded-xl items-center shadow-xl px-10 gap-2 py-8'>
+    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 w-full gap-1 items-center justify-center mt-24'>
+        {
+            statsData.map((item,index) => (
+                <div key={index} className='flex bg-primary text-white flex-col justify-center rounded-xl items-center border-2 shadow-xl px-10 gap-2 py-8'>
             <div className='flex items-end justify-center gap-2'>
-                <span className='text-primary font-extrabold text-3xl'>105</span>
-                <span className='text-primary font-extrabold'> lbs</span>
+                <span className=' font-extrabold text-3xl'>{item.value}</span>
+                <span className=' font-extrabold'>{item.unit}</span>
             </div>
             <div className='w-full text-sm'>
-                Net Weight
+                {item.label}
             </div>
         </div>
-        <div className='flex flex-col justify-center rounded-xl items-center shadow-xl px-10 gap-2 py-8'>
-            <div className='flex items-end justify-center gap-2'>
-                <span className='text-primary font-extrabold text-3xl'>26</span>
-                <span className='text-primary font-extrabold'> mph</span>
-            </div>
-            <div className='w-full text-sm'>
-                Top Speed
-            </div>
-        </div>
-        <div className='flex flex-col justify-center rounded-xl items-center shadow-xl px-10 gap-2 py-8'>
-            <div className='flex items-end justify-center gap-2'>
-                <span className='text-primary font-extrabold text-3xl'>38</span>
-                <span className='text-primary font-extrabold'> miles</span>
-            </div>
-            <div className='w-full text-sm'>
-                Ma Range
-            </div>
-        </div>
-        <div className='flex flex-col justify-center rounded-xl items-center shadow-xl px-10 gap-2 py-8'>
-            <div className='flex items-end justify-center gap-2'>
-                <span className='text-primary font-extrabold text-3xl'>22%</span>
-                <span className='text-primary font-etralarge'> slope</span>
-            </div>
-            <div className='w-full text-sm'>
-                Hill Climbing
-            </div>
-        </div>
-        <div className='flex flex-col justify-center rounded-xl items-center shadow-xl px-10 gap-2 py-8'>
-            <div>
-                <span className='text-primary font-extrabold text-3xl'>2</span>
-                <span className='font-large'>X</span>
-            </div>
-            <div className='w-full text-sm'>
-                Hydralic Disc Brakes
-            </div>
-        </div>
+            ))
+        }
     </div>
   )
 }
