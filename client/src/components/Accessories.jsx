@@ -79,8 +79,8 @@ const Accessories = () => {
             
         
       </div>
-      <div className="w-full flex justify-center items-center my-12">
-          <div className="text-center text-primary px-8 py-4 text-3xl font-bold border border-4 rounded-lg hover:bg-primary hover:text-white transition-all even border-primary">
+      <div className="w-3/4 lg:w-full mx-auto flex justify-center items-center my-12">
+          <div className="text-center text-primary px-8 py-4 text-xl lg:text-3xl font-bold border border-4 rounded-lg hover:bg-primary hover:text-white transition-all even border-primary">
             More Accessories Coming Soon
           </div>
       </div>

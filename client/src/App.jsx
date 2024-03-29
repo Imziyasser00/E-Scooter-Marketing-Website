@@ -4,6 +4,8 @@ import Stats from "./components/Stats";
 import ProductInfo from "./components/ProductInfo";
 import MotorStats from "./components/MotorStats";
 import Accessories from "./components/Accessories";
+import Colors from "./components/Colors";
+import Testimonials from "./components/Testimonials";
 
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
         <ProductInfo />
         <MotorStats />
         <Accessories />
+        <Colors />
+        <Testimonials />
       </main>   
   )
 }
