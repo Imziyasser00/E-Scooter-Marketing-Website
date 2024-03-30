@@ -6,6 +6,8 @@ import MotorStats from "./components/MotorStats";
 import Accessories from "./components/Accessories";
 import Colors from "./components/Colors";
 import Testimonials from "./components/Testimonials";
+import NewsLetter from "./components/NewsLetter";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
         <Accessories />
         <Colors />
         <Testimonials />
+        <NewsLetter />
+        <Footer />
       </main>   
   )
 }
